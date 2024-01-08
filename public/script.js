@@ -6,7 +6,7 @@ const summarizedTextArea = document.getElementById("summary");
 
 textArea.addEventListener("input", verifyTextLength);
 
-submitButton.addEventListener("submit", submitData);
+submitButton.addEventListener("click", submitData);
 
 // First, we disable the submit button by default when the user loads the website.
 submitButton.disabled = true;
@@ -47,7 +47,7 @@ function submitData(e) {
     body: raw,
     redirect: 'follow'
   };
-
+    // console.log(raw)
   // Send the text to the server using fetch API
 
  // Note - here we can omit the “baseUrl” we needed in Postman and just use a relative path to “/summarize” because we will be calling the API from our Replit!  
