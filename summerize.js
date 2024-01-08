@@ -27,7 +27,7 @@ let config = {
 
   try {
     const response = await axios.request(config);
-    return response.data[0].summarizeText
+   return response.data[0].summary_text;
     // console.log(JSON.stringify(response.data));
   }
   catch (error) {
